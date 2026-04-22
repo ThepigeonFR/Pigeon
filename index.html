@@ -14,7 +14,17 @@
             background-attachment: fixed;
         }
         h1, h2, h3, h4, h5, h6, p, a, li, span, div, footer, header, main, section {
-            color: #fff;
+            background: linear-gradient(90deg, #ff0057, #fffd38, #00ff90, #00c3ff, #a259ff, #ff0057);
+            background-size: 200% auto;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-text 5s linear infinite;
+        }
+        @keyframes rainbow-text {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
         }
     </style>
 </head>
